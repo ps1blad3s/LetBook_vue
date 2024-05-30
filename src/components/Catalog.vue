@@ -4,7 +4,7 @@ import ProductList from "@/components/ProductList.vue";
 </script>
 
 <template>
-  <div class="catalog-name">КАТАЛОГ
+  <div class="catalog-name">Каталог
 <!--    <div class="search">-->
 <!--      <input type="text" placeholder="Поиск...">-->
 <!--    </div>-->

@@ -1,8 +1,7 @@
 <script setup>
-
 import Header from "@/components/Header.vue";
 import Catalog from "@/components/Catalog.vue";
-
+import Cart from "@/Cart.vue";
 
 </script>
 
@@ -10,9 +9,8 @@ import Catalog from "@/components/Catalog.vue";
   <div id="App">
     <Header />
     <Catalog />
-
+<!--<Cart/>-->
   </div>
-
 </template>
 
 <style scoped lang="scss">
