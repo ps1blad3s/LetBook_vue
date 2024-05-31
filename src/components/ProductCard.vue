@@ -15,9 +15,6 @@ function clickAddProduct() {
 }
 </script>
 
-
-
-
 <template>
   <div class="product-card">
     <img :src="props.image" alt="Product Image" class="product-image">
@@ -33,7 +30,7 @@ function clickAddProduct() {
 .product-card {
   margin: 20px 0 10px 20px;
   width: 300px;
-  border: 0.5px solid #efefef; // #ccc было, but #efefef too cool
+  border: 0.5px solid #efefef;
   border-radius: 2px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -91,8 +88,6 @@ function clickAddProduct() {
     &:hover {
       background-color: #175b8f;
     }
-
-
   }
 
   .isAdd-button {
@@ -107,7 +102,7 @@ function clickAddProduct() {
     margin-bottom: 10px;
 
     &:hover {
-      background-color: #26a9e0;
+      background-color: #175b8f;
     }
   }
 }

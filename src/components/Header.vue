@@ -14,25 +14,20 @@ const handleScroll = () => {
   }
 
   prevScrollPosition = currentScrollPositon
-
-
 }
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
 });
-
 </script>
 
 <template>
-
   <header ref="headerRef">
-    <div class="logo" >LetBooks</div>
+    <div class="logo"><img src="../image/logo.svg" width="30" height="30" alt=""><span class="logo-text">LetBooks</span></div>
     <div class="menu">
       <p class="menu-item-catalog">Каталог</p>
       <p class="menu-item-cart">Корзина</p>
     </div>
   </header>
-
 </template>
 
 <style scoped lang="scss">
@@ -52,6 +47,10 @@ onMounted(() => {
       font-size: 30px;
       margin-left: 200px;
       cursor: pointer;
+
+      .logo-text {
+        margin-left: 5px;
+      }
     }
 
     .menu {

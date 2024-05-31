@@ -1,16 +1,14 @@
 <script setup>
 import Header from "@/components/Header.vue";
 import Catalog from "@/components/Catalog.vue";
-import Cart from "@/Cart.vue";
-
 </script>
 
 <template>
   <div id="App">
     <Header />
     <Catalog />
-<!--<Cart/>-->
   </div>
+<!--  <Cart/>-->
 </template>
 
 <style scoped lang="scss">
