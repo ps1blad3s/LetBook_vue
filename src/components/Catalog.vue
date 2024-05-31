@@ -1,20 +1,5 @@
 <script setup>
-import { ref, provide } from "vue";
 import ProductList from "@/components/ProductList.vue";
-
-// const products = ref([])
-//
-// provide("products", products)
-// const searchInput = ref("")
-//
-// const search = (query) => {
-//   products.value = products.value.filter((product) => {
-//     const title = product.title.toLowerCase();
-//     const author = product.author.toLowerCase();
-//     return title.includes(query.toLowerCase() || author.includes(query.toLowerCase()))
-//   });
-// }
-
 
 </script>
 
