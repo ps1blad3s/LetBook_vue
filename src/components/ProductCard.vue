@@ -13,6 +13,7 @@ const addProduct = ref(true);
 function clickAddProduct() {
   addProduct.value = !addProduct.value
 }
+
 </script>
 
 <template>

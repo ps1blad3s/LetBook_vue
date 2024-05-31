@@ -1,5 +1,10 @@
 <script setup>
 import ProductCard from "@/components/ProductCard.vue";
+import {ref} from "vue";
+
+const products = ref([
+
+])
 </script>
 
 <template>

@@ -5,6 +5,17 @@ import ProductList from "@/components/ProductList.vue";
 <template>
   <div class="header-wrapper">
     <div class="catalog-name">Каталог</div>
+
+    <div class="filter-wrapper-header">
+    </div>
+    <div class="filter-wrapper">
+      <select class="filter-select">
+        <option>По названию</option>
+        <option>По цене (сначала дешевые)</option>
+        <option>По цене (сначала дорогие)</option>
+      </select>
+    </div>
+
     <div class="search-cl">
       <img class="search-icon" src="../image/search.svg"/>
       <input class="search-input" placeholder="Хочу найти...">
@@ -14,6 +25,20 @@ import ProductList from "@/components/ProductList.vue";
 </template>
 
 <style scoped lang="scss">
+.filter-wrapper {
+  margin-top: 60px;
+  margin-left: 37em;
+
+  .filter-select {
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    padding: 0.45rem 0.5rem ;
+    outline: none;
+  }
+}
+
+
+
 .search-icon {
   position: absolute;
   padding-top: 8px;
@@ -27,7 +52,7 @@ import ProductList from "@/components/ProductList.vue";
 }
 
 .search-cl {
-  margin-right: 400px;
+  margin-right: 330px;
   margin-top: 60px;
   position: relative;
 }
