@@ -1,5 +1,21 @@
 <script setup>
+import { ref, provide } from "vue";
 import ProductList from "@/components/ProductList.vue";
+
+// const products = ref([])
+//
+// provide("products", products)
+// const searchInput = ref("")
+//
+// const search = (query) => {
+//   products.value = products.value.filter((product) => {
+//     const title = product.title.toLowerCase();
+//     const author = product.author.toLowerCase();
+//     return title.includes(query.toLowerCase() || author.includes(query.toLowerCase()))
+//   });
+// }
+
+
 </script>
 
 <template>
@@ -18,10 +34,10 @@ import ProductList from "@/components/ProductList.vue";
 
     <div class="search-cl">
       <img class="search-icon" src="../image/search.svg"/>
-      <input class="search-input" placeholder="Хочу найти...">
+      <input class="search-input" placeholder="Хочу найти..." >
     </div>
   </div>
-  <ProductList/>
+  <ProductList />
 </template>
 
 <style scoped lang="scss">
