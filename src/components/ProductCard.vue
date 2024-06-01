@@ -21,7 +21,7 @@ function clickAddProduct() {
     <img :src="props.image" alt="Product Image" class="product-image">
     <h2 class="product-name">{{ props.title }}</h2>
     <p class="product-description">Автор: {{ props.author }}</p>
-    <p class="product-price">Цена: {{props.price}}</p>
+    <p class="product-price">Цена: {{props.price}} ₽ </p>
     <button class="buy-button" @click.prevent="clickAddProduct" v-if="addProduct">Добавить в корзину</button>
     <button class="isAdd-button" @click.prevent="clickAddProduct" v-else>Добавлено в корзину</button>
   </div>

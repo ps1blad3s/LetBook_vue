@@ -1,6 +1,9 @@
 <script setup>
+import {ref} from 'vue'
 import ProductList from "@/components/ProductList.vue";
 
+const searchQuery = ref('')
+const sortOption = ref('По названию')
 </script>
 
 <template>
@@ -10,7 +13,7 @@ import ProductList from "@/components/ProductList.vue";
     <div class="filter-wrapper-header">
     </div>
     <div class="filter-wrapper">
-      <select class="filter-select">
+      <select class="filter-select" v-model="sortOption">
         <option>По названию</option>
         <option>По цене (сначала дешевые)</option>
         <option>По цене (сначала дорогие)</option>
@@ -19,10 +22,10 @@ import ProductList from "@/components/ProductList.vue";
 
     <div class="search-cl">
       <img class="search-icon" src="../image/search.svg"/>
-      <input class="search-input" placeholder="Хочу найти..." >
+      <input class="search-input" placeholder="Хочу найти..." v-model="searchQuery">
     </div>
   </div>
-  <ProductList />
+  <ProductList :searchQuery="searchQuery" :sortOption="sortOption"/>
 </template>
 
 <style scoped lang="scss">
