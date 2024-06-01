@@ -1,14 +1,11 @@
 <script setup>
-import Header from "@/components/Header.vue";
-import Catalog from "@/components/Catalog.vue";
+
 </script>
 
 <template>
   <div id="App">
-    <Header />
-    <Catalog />
+    <RouterView/>
   </div>
-<!--  <Cart/>-->
 </template>
 
 <style scoped lang="scss">

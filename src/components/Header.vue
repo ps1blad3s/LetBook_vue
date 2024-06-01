@@ -24,8 +24,8 @@ onMounted(() => {
   <header ref="headerRef">
     <div class="logo"><img src="../image/logo.svg" width="30" height="30" alt=""><span class="logo-text">LetBooks</span></div>
     <div class="menu">
-      <p class="menu-item-catalog">Каталог</p>
-      <p class="menu-item-cart">Корзина</p>
+      <RouterLink class="menu-item-catalog" to="/">Каталог</RouterLink>
+      <RouterLink class="menu-item-cart" to="/cart">Корзина</RouterLink>
     </div>
   </header>
 </template>

@@ -1,12 +1,14 @@
 <script setup>
 import {ref} from 'vue'
 import ProductList from "@/components/ProductList.vue";
+import Header from "@/components/Header.vue";
 
 const searchQuery = ref('')
 const sortOption = ref('По названию')
 </script>
 
 <template>
+  <Header/>
   <div class="header-wrapper">
     <div class="catalog-name">Каталог</div>
 

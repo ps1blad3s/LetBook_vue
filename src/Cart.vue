@@ -1,8 +1,6 @@
 <script setup>
 import Header from "@/components/Header.vue";
-import { ref } from "vue";
 
-const page = ref('Cart');
 </script>
 
 <template>

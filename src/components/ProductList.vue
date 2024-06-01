@@ -97,14 +97,9 @@ const filteredAndSortedProducts = computed(() => {
   }
 });
 
-
-
-
 </script>
 
 <template>
-
-
   <div class="list">
     <ProductCard
         v-for="product in filteredAndSortedProducts"
