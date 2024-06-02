@@ -62,14 +62,13 @@ onMounted(() => {
 
       .menu-item-catalog,
       .menu-item-cart {
-
         margin-left: 10px;
         margin-right: 10px;
         cursor: pointer;
 
         color: black;
         transition: 0.3s;
-
+        text-decoration: none;
           &:hover {
             color: grey;
           }

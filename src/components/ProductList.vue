@@ -1,6 +1,6 @@
 <script setup>
 import ProductCard from "@/components/ProductCard.vue";
-import {ref, computed } from "vue";
+import {computed, ref} from "vue";
 
 const products = ref([
   {
@@ -103,21 +103,21 @@ const filteredAndSortedProducts = computed(() => {
   <div class="list">
     <ProductCard
         v-for="product in filteredAndSortedProducts"
-                 :key="product.title"
-                 :image="product.image"
-                 :title="product.title"
-                  :author="product.author"
-                 :price="product.price" />
+        :key="product.title"
+        :image="product.image"
+        :title="product.title"
+        :author="product.author"
+        :price="product.price"/>
   </div>
 
 </template>
 
 <style scoped lang="scss">
- .list {
-   display: flex;
-   flex-wrap: wrap;
-   max-width: 1600px;
-   margin-top: 20px;
-   padding-left: 300px;
- }
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  margin-top: 20px;
+  padding-left: 300px;
+}
 </style>
